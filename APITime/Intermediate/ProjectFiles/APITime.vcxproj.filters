@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\APITime.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\APITime.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\APITimeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\APITime">
+      <UniqueIdentifier>{34565A02-0C5A-3C46-8B65-E86C430C725A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\APITime\APITime.Build.cs">
+      <Filter>Source\APITime</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\APITime\APITime.cpp">
+      <Filter>Source\APITime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\APITime\APITime.h">
+      <Filter>Source\APITime</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\APITime\APITimeGameModeBase.cpp">
+      <Filter>Source\APITime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\APITime\APITimeGameModeBase.h">
+      <Filter>Source\APITime</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\APITime\MyCharacter.cpp">
+      <Filter>Source\APITime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\APITime\MyCharacter.h">
+      <Filter>Source\APITime</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
