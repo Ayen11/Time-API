@@ -5,7 +5,8 @@
 #include "Kismet/KismetMathLibrary.h"
 
 AAPITimeGameModeBase::AAPITimeGameModeBase() :
-City(ECity::EC_Tokyo)
+City(ECity::EC_Tokyo),
+SecondCountFloat(1.f)
 {
 	Http = &FHttpModule::Get();
 }
@@ -13,7 +14,8 @@ City(ECity::EC_Tokyo)
 void AAPITimeGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
-	 SendHTTPGet();
+	SendHTTPGet();
+	
 }
 
 void AAPITimeGameModeBase::SendHTTPGet()
@@ -41,7 +43,7 @@ void AAPITimeGameModeBase::SendHTTPGet()
 }
 
 void AAPITimeGameModeBase::OnGetTimeResponse(FHttpRequestPtr Request, FHttpResponsePtr Response,
-	bool bConnectedSuccesfully)
+	bool bConnectedSuccessfully)
 {
 	// Creating the json object
 	TSharedPtr<FJsonObject> JsonObject;
@@ -59,6 +61,7 @@ void AAPITimeGameModeBase::OnGetTimeResponse(FHttpRequestPtr Request, FHttpRespo
 		{
 			// this is where we put the information on what to do with the data
 			UKismetMathLibrary::DateTimeFromIsoString(*JsonObject->GetStringField("dateTime"), Time);
+			BreakTime();
 		}
 	}
 }
@@ -81,4 +84,61 @@ void AAPITimeGameModeBase::SwitchOnCity()
 	default:
 		break;
 	}
+}
+
+void AAPITimeGameModeBase::BreakTime()
+{
+	int32 Year;
+	int32 Month;
+	int32 Day;
+	int32 MilliSecond;
+
+	// Break the time variable and store the data in individual variables
+	UKismetMathLibrary::BreakDateTime(Time, Year, Month, Day,Hour, Minute, Second, MilliSecond);
+}
+
+void AAPITimeGameModeBase::SecondCounterCallback()
+{
+	
+}
+
+FText AAPITimeGameModeBase::GetCurrentTime()
+{
+	FString Hours;
+	FString Minutes;
+	FString Seconds;
+
+	// handle hours
+	if (Hour<10)
+	{
+		Hours = FString("0").Append(FString::FromInt(Hour));
+	}
+	else
+	{
+		Hours = FString::FromInt(Hour);
+	}
+
+	// handle minutes
+	if (Minute<10)
+	{
+		Minutes = FString("0").Append(FString::FromInt(Minute));
+	}
+	else
+	{
+		Minutes = FString::FromInt(Minute);
+	}
+
+	// handle seconds
+	if (Second<10)
+	{
+		Seconds = FString("0").Append(FString::FromInt(Second));
+	}
+	else
+	{
+		Seconds = FString::FromInt(Second);
+	}
+
+	FString ReturnString = Hours.Append(": ").Append(Minutes).Append(": ").Append(Seconds);
+	
+	return FText::FromString(ReturnString);
 }

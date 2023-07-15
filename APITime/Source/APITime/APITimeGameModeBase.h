@@ -38,10 +38,14 @@ protected:
 	void SendHTTPGet();
 
 	//handle the HTTP request
-	void OnGetTimeResponse(FHttpRequestPtr Request,FHttpResponsePtr Response, bool bConnectedSuccesfully);
+	void OnGetTimeResponse(FHttpRequestPtr Request,FHttpResponsePtr Response, bool bConnectedSuccessfully);
 
 	UFUNCTION()
 	void SwitchOnCity();
+
+	void BreakTime();
+
+	void SecondCounterCallback();
 	
 private:
 
@@ -53,8 +57,18 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= Time, meta=(AllowPrivateAccess))
 	FDateTime Time;
+
+	int32 Hour;
+	int32 Minute;
+	int32 Second;
+
+	FTimerHandle SecondCounter;
+	float SecondCountFloat;
 	
 public:
+
+	UFUNCTION(BlueprintCallable)
+	FText GetCurrentTime();
 	
 	
 };
