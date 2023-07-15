@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "HTTP.h"
+#include "Http.h"
 #include "APITimeGameModeBase.generated.h"
 
 /**
@@ -38,7 +38,6 @@ protected:
 	void SendHTTPGet();
 
 	//handle the HTTP request
-	UFUNCTION()
 	void OnGetTimeResponse(FHttpRequestPtr Request,FHttpResponsePtr Response, bool bConnectedSuccesfully);
 
 	UFUNCTION()
