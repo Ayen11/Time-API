@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "APITime",
-			"Path": "D:\\EmanuelsProjects\\UnrealEngineProjects\\UnrealEngine5-API-Time\\APITime\\Source\\APITime.Target.cs",
+			"Path": "D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITime.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "APITimeEditor",
-			"Path": "D:\\EmanuelsProjects\\UnrealEngineProjects\\UnrealEngine5-API-Time\\APITime\\Source\\APITimeEditor.Target.cs",
+			"Path": "D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITimeEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -4,12 +4,21 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "Http.h"
+#include "HTTP.h"
 #include "APITimeGameModeBase.generated.h"
 
 /**
  * 
  */
+UENUM(BlueprintType)
+enum class ECity : uint8
+{
+	EC_Tokyo    UMETA(DisplayName = "Tokyo"),
+	EC_London   UMETA(DisplayName = "London"),
+	EC_NewYork  UMETA(DisplayName = "NewYork"),
+	EC_Default  UMETA(DisplayName = "Default"),
+};
+
 UCLASS()
 class APITIME_API AAPITimeGameModeBase : public AGameModeBase
 {
@@ -31,11 +40,20 @@ protected:
 	//handle the HTTP request
 	UFUNCTION()
 	void OnGetTimeResponse(FHttpRequestPtr Request,FHttpResponsePtr Response, bool bConnectedSuccesfully);
+
+	UFUNCTION()
+	void SwitchOnCity();
 	
 private:
 
-	 FHttpModule* Http;
+	FHttpModule* Http;
 
+	ECity City;
+
+	FString CityURL;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= Time, meta=(AllowPrivateAccess))
+	FDateTime Time;
 	
 public:
 	

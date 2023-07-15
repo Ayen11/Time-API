@@ -2,8 +2,10 @@
 
 
 #include "APITimeGameModeBase.h"
+#include "Kismet/KismetMathLibrary.h"
 
-AAPITimeGameModeBase::AAPITimeGameModeBase()
+AAPITimeGameModeBase::AAPITimeGameModeBase() :
+City(ECity::EC_Tokyo)
 {
 	Http = &FHttpModule::Get();
 }
@@ -11,18 +13,21 @@ AAPITimeGameModeBase::AAPITimeGameModeBase()
 void AAPITimeGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
-	 
+	 SendHTTPGet();
 }
 
 void AAPITimeGameModeBase::SendHTTPGet()
 {
+
+	SwitchOnCity();
+	
 	// Create the request
 	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest();
 
 	// Bind the response function to request
 	Request->OnProcessRequestComplete().BindUObject(this, &AAPITimeGameModeBase::OnGetTimeResponse);
 	// Setting the URL - Where to send the request
-	Request->SetURL("");
+	Request->SetURL(CityURL);
 	// Adding what type of request
 	Request->SetVerb("GET");
 
@@ -47,11 +52,33 @@ void AAPITimeGameModeBase::OnGetTimeResponse(FHttpRequestPtr Request, FHttpRespo
 		const FString ResponseBody = Response->GetContentAsString();
 		// Creating a reader for the response body
 		TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(ResponseBody);
+
 		
 		// Check if we are successful in reading the json 
 		if (FJsonSerializer::Deserialize(Reader, JsonObject))
 		{
 			// this is where we put the information on what to do with the data
+			UKismetMathLibrary::DateTimeFromIsoString(*JsonObject->GetStringField("dateTime"), Time);
 		}
+	}
+}
+
+void AAPITimeGameModeBase::SwitchOnCity()
+{
+	CityURL = FString("https://timeapi.io/api/Time/current/zone?timeZone=");
+
+	switch (City)
+	{
+	case ECity::EC_Tokyo:
+		CityURL.Append("Asia/Tokyo");
+		break;
+	case ECity::EC_London:
+		CityURL.Append("Europe/London");
+		break;
+	case ECity::EC_NewYork:
+		CityURL.Append("America/New_York");
+		break;
+	default:
+		break;
 	}
 }
