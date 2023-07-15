@@ -69,6 +69,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	FText GetCurrentTime();
-	
+
+	UFUNCTION(BlueprintCallable)
+	void SetCurrentCity(ECity CurrentCity);
 	
 };

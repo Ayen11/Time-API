@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-APITime-2465.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\APITime.init.gen.cpp.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\APITimeGameModeBase.gen.cpp.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\MyCharacter.gen.cpp.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\APITime.cpp.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\MyCharacter.cpp.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\APITimeGameModeBase.cpp.obj"
+"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\Default.rc2.res"
+/OUT:"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\UnrealEditor-APITime-2465.lib"

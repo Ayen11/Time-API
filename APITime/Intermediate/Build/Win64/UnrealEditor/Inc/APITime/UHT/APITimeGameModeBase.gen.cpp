@@ -82,6 +82,14 @@ void EmptyLinkFunctionForGeneratedCodeAPITimeGameModeBase() {}
 		}
 		return Z_Registration_Info_UEnum_ECity.InnerSingleton;
 	}
+	DEFINE_FUNCTION(AAPITimeGameModeBase::execSetCurrentCity)
+	{
+		P_GET_ENUM(ECity,Z_Param_CurrentCity);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetCurrentCity(ECity(Z_Param_CurrentCity));
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AAPITimeGameModeBase::execGetCurrentTime)
 	{
 		P_FINISH;
@@ -109,6 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeAPITimeGameModeBase() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetCurrentTime", &AAPITimeGameModeBase::execGetCurrentTime },
 			{ "SendHTTPGet", &AAPITimeGameModeBase::execSendHTTPGet },
+			{ "SetCurrentCity", &AAPITimeGameModeBase::execSetCurrentCity },
 			{ "SwitchOnCity", &AAPITimeGameModeBase::execSwitchOnCity },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -169,6 +178,41 @@ void EmptyLinkFunctionForGeneratedCodeAPITimeGameModeBase() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics
+	{
+		struct APITimeGameModeBase_eventSetCurrentCity_Parms
+		{
+			ECity CurrentCity;
+		};
+		static const UECodeGen_Private::FBytePropertyParams NewProp_CurrentCity_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_CurrentCity;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::NewProp_CurrentCity_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::NewProp_CurrentCity = { "CurrentCity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(APITimeGameModeBase_eventSetCurrentCity_Parms, CurrentCity), Z_Construct_UEnum_APITime_ECity, METADATA_PARAMS(nullptr, 0) }; // 2258063495
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::NewProp_CurrentCity_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::NewProp_CurrentCity,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "APITimeGameModeBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAPITimeGameModeBase, nullptr, "SetCurrentCity", nullptr, nullptr, sizeof(Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::APITimeGameModeBase_eventSetCurrentCity_Parms), Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AAPITimeGameModeBase_SwitchOnCity_Statics
 	{
 #if WITH_METADATA
@@ -218,6 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeAPITimeGameModeBase() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AAPITimeGameModeBase_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AAPITimeGameModeBase_GetCurrentTime, "GetCurrentTime" }, // 3795760466
 		{ &Z_Construct_UFunction_AAPITimeGameModeBase_SendHTTPGet, "SendHTTPGet" }, // 1342926870
+		{ &Z_Construct_UFunction_AAPITimeGameModeBase_SetCurrentCity, "SetCurrentCity" }, // 1456340589
 		{ &Z_Construct_UFunction_AAPITimeGameModeBase_SwitchOnCity, "SwitchOnCity" }, // 708493405
 	};
 #if WITH_METADATA
@@ -280,9 +325,9 @@ void EmptyLinkFunctionForGeneratedCodeAPITimeGameModeBase() {}
 		{ ECity_StaticEnum, TEXT("ECity"), &Z_Registration_Info_UEnum_ECity, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2258063495U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAPITimeGameModeBase, AAPITimeGameModeBase::StaticClass, TEXT("AAPITimeGameModeBase"), &Z_Registration_Info_UClass_AAPITimeGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAPITimeGameModeBase), 1033237221U) },
+		{ Z_Construct_UClass_AAPITimeGameModeBase, AAPITimeGameModeBase::StaticClass, TEXT("AAPITimeGameModeBase"), &Z_Registration_Info_UClass_AAPITimeGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAPITimeGameModeBase), 2609420978U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_1593400530(TEXT("/Script/APITime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_2410404750(TEXT("/Script/APITime"),
 		Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_Statics::EnumInfo));

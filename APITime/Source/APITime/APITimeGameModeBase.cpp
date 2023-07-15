@@ -16,6 +16,7 @@ void AAPITimeGameModeBase::BeginPlay()
 	Super::BeginPlay();
 	SendHTTPGet();
 	
+	GetWorldTimerManager().SetTimer(SecondCounter, this, &AAPITimeGameModeBase::SecondCounterCallback, SecondCountFloat);
 }
 
 void AAPITimeGameModeBase::SendHTTPGet()
@@ -99,7 +100,10 @@ void AAPITimeGameModeBase::BreakTime()
 
 void AAPITimeGameModeBase::SecondCounterCallback()
 {
+	Time += FTimespan::FromSeconds(1);
+	BreakTime();
 	
+	GetWorldTimerManager().SetTimer(SecondCounter, this, &AAPITimeGameModeBase::SecondCounterCallback, SecondCountFloat);
 }
 
 FText AAPITimeGameModeBase::GetCurrentTime()
@@ -141,4 +145,10 @@ FText AAPITimeGameModeBase::GetCurrentTime()
 	FString ReturnString = Hours.Append(": ").Append(Minutes).Append(": ").Append(Seconds);
 	
 	return FText::FromString(ReturnString);
+}
+
+void AAPITimeGameModeBase::SetCurrentCity(ECity CurrentCity)
+{
+	City = CurrentCity;
+	SendHTTPGet();
 }

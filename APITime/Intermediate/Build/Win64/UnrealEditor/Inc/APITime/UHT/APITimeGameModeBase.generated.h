@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ECity : uint8;
 #ifdef APITIME_APITimeGameModeBase_generated_h
 #error "APITimeGameModeBase.generated.h already included, missing '#pragma once' in APITimeGameModeBase.h"
 #endif
@@ -17,6 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_25_SPARSE_DATA
 #define FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_25_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetCurrentCity); \
 	DECLARE_FUNCTION(execGetCurrentTime); \
 	DECLARE_FUNCTION(execSwitchOnCity); \
 	DECLARE_FUNCTION(execSendHTTPGet);
@@ -24,6 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FID_EmanuelsProjects_UnrealEngineProjects_Time_API_APITime_Source_APITime_APITimeGameModeBase_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSetCurrentCity); \
 	DECLARE_FUNCTION(execGetCurrentTime); \
 	DECLARE_FUNCTION(execSwitchOnCity); \
 	DECLARE_FUNCTION(execSendHTTPGet);
