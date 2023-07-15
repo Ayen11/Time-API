@@ -1,17 +1,25 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\source\\apitime\\apitimegamemodebase.cpp",
+        "Source": "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\source\\apitime\\apitimegamemodebase.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\intermediate\\build\\win64\\apitimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\intermediate\\build\\win64\\apitimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\intermediate\\build\\win64\\unrealeditor\\development\\apitime\\definitions.apitime.h",
-            "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\source\\apitime\\apitimegamemodebase.h",
+            "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\intermediate\\build\\win64\\unrealeditor\\development\\apitime\\definitions.apitime.h",
+            "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\source\\apitime\\apitimegamemodebase.h",
             "d:\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
             "d:\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
             "d:\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
             "d:\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
-            "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\intermediate\\build\\win64\\unrealeditor\\inc\\apitime\\uht\\apitimegamemodebase.generated.h"
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\http.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\httpmodule.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttprequest.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpbase.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpresponse.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\platformhttp.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\windows\\windowsplatformhttp.h",
+            "d:\\ue_5.1\\engine\\source\\runtime\\online\\http\\public\\genericplatform\\genericplatformhttp.h",
+            "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\intermediate\\build\\win64\\unrealeditor\\inc\\apitime\\uht\\apitimegamemodebase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

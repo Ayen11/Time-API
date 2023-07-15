@@ -1,12 +1,12 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\source\\apitime\\apitime.cpp",
+        "Source": "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\source\\apitime\\apitime.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\intermediate\\build\\win64\\apitimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\intermediate\\build\\win64\\apitimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\intermediate\\build\\win64\\unrealeditor\\development\\apitime\\definitions.apitime.h",
-            "d:\\emanuelsprojects\\unrealengineprojects\\unrealengine5-api-time\\apitime\\source\\apitime\\apitime.h"
+            "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\intermediate\\build\\win64\\unrealeditor\\development\\apitime\\definitions.apitime.h",
+            "d:\\emanuelsprojects\\unrealengineprojects\\time-api\\apitime\\source\\apitime\\apitime.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

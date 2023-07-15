@@ -1,4 +1,4 @@
-D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Source\APITime\MyCharacter.cpp
+D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Source\APITime\MyCharacter.cpp
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I Runtime
@@ -269,8 +269,8 @@ D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Source\A
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
-/I D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Inc\APITime\UHT
-/I D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Source
+/I D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Inc\APITime\UHT
+/I D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Source
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -279,12 +279,12 @@ D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Source\A
 /I D:\WindowSDK_ForUE5\include\10.0.22621.0\shared
 /I D:\WindowSDK_ForUE5\include\10.0.22621.0\um
 /I D:\WindowSDK_ForUE5\include\10.0.22621.0\winrt
-/FI"D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\Definitions.APITime.h"
-/Yu"D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\MyCharacter.cpp.obj"
-/sourceDependencies D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\MyCharacter.cpp.dep.json
+/FI"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\Definitions.APITime.h"
+/Yu"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\APITimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\MyCharacter.cpp.obj"
+/sourceDependencies D:\EmanuelsProjects\UnrealEngineProjects\Time-API\APITime\Intermediate\Build\Win64\UnrealEditor\Development\APITime\MyCharacter.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi

@@ -1,18 +1,16 @@
 D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Inc\APITime\UHT\APITime.init.gen.cpp
 /I .
-/I D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Inc\APITime\UHT
-/I D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Source
-/I Runtime
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
+/I Runtime
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\UHT
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore\UHT
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -271,6 +269,8 @@ D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermed
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
+/I D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Intermediate\Build\Win64\UnrealEditor\Inc\APITime\UHT
+/I D:\EmanuelsProjects\UnrealEngineProjects\UnrealEngine5-API-Time\APITime\Source
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
