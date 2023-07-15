@@ -2399,3 +2399,7 @@ Otherwise assets can be missing from cooked builds. Continue with rename?
 [2023.07.15-12.54.32:987][ 50]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/_Game/Maps/MainMap' took 0.059
 [2023.07.15-13.04.33:412][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
 [2023.07.15-13.04.33:413][851]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/_Game/Maps/MainMap' took 0.068
+[2023.07.15-13.14.33:832][652]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2023.07.15-13.14.33:833][652]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/_Game/Maps/MainMap' took 0.053
+[2023.07.15-13.24.34:289][453]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2023.07.15-13.24.34:290][453]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/_Game/Maps/MainMap' took 0.056
