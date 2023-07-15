@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\EmanuelsProjects\\UnrealEngineProjects\\UnrealEngine5-API-Time\\APITime\\Source\\APITime\\APITime.Build.cs",
-		"D:\\EmanuelsProjects\\UnrealEngineProjects\\UnrealEngine5-API-Time\\APITime\\Source\\APITime.Target.cs",
-		"D:\\EmanuelsProjects\\UnrealEngineProjects\\UnrealEngine5-API-Time\\APITime\\Source\\APITimeEditor.Target.cs"
+		"D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITime\\APITime.Build.cs",
+		"D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITime.Target.cs",
+		"D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITimeEditor.Target.cs"
 	],
 	"EngineVersion": "5.1.1"
 }

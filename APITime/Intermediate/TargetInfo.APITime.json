@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "APITime",
+			"Path": "D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITime.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "APITimeEditor",
+			"Path": "D:\\EmanuelsProjects\\UnrealEngineProjects\\Time-API\\APITime\\Source\\APITimeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
